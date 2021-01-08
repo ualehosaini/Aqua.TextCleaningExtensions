@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Aqua.TextCleaningExtensions
+﻿namespace Aqua.TextCleaningExtensions
 {
     public static class TextCleaningExtensions
     {
@@ -12,6 +8,13 @@ namespace Aqua.TextCleaningExtensions
         /// <param name="s">string</param>
         /// <returns>true/false</returns>
         public static bool IsNullOrEmpty(this string s) => string.IsNullOrEmpty(s);
+
+        /// <summary>
+        /// Is Null Or White Space String?
+        /// </summary>
+        /// <param name="s">string</param>
+        /// <returns>true/false</returns>
+        public static bool IsNullOrWhiteSpace(this string s) => string.IsNullOrWhiteSpace(s);
 
     }
 }
