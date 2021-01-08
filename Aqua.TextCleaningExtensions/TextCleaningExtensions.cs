@@ -16,5 +16,12 @@
         /// <returns>true/false</returns>
         public static bool IsNullOrWhiteSpace(this string s) => string.IsNullOrWhiteSpace(s);
 
+        /// <summary>
+        /// If the string is null convert it to empty
+        /// </summary>
+        /// <param name="s"></param>
+        /// <returns></returns>
+        public static string IfNullReturnEmptyString(this string s) => s == null ? string.Empty : s;
+
     }
 }
