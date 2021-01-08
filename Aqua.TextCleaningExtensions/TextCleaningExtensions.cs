@@ -1,4 +1,6 @@
-﻿namespace Aqua.TextCleaningExtensions
+﻿using System.Text.RegularExpressions;
+
+namespace Aqua.TextCleaningExtensions
 {
     public static class TextCleaningExtensions
     {
@@ -23,5 +25,22 @@
         /// <returns></returns>
         public static string IfNullReturnEmptyString(this string s) => s == null ? string.Empty : s;
 
+
+        /// <summary>
+        /// Remove Wide Spaces from the text
+        /// </summary>
+        /// <param name="s">text</param>
+        /// <returns>clean text</returns>
+        public static string RemoveWideSpaces(this string s)
+        {
+            if (s.IsNullOrEmpty()) return s;
+
+            string pattern = "\\s+";
+            string replacement = " ";
+
+            Regex rx = new Regex(pattern);
+
+            return rx.Replace(s, replacement).Trim();
+        }
     }
 }
