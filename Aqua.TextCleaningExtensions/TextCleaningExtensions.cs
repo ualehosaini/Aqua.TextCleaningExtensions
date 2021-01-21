@@ -42,5 +42,13 @@ namespace Aqua.TextCleaningExtensions
 
             return rx.Replace(s, replacement).Trim();
         }
+
+        /// <summary>
+        /// Convert Tabs to WhiteSpaces
+        /// </summary>
+        /// <param name="s"></param>
+        /// <returns></returns>
+        public static string ReplaceTabsWithSpaces(this string s)
+            => s.IsNullOrEmpty() ? s : s.Replace("\t", " ").RemoveWideSpaces();
     }
 }
