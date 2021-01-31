@@ -50,5 +50,13 @@ namespace Aqua.TextCleaningExtensions
         /// <returns></returns>
         public static string ReplaceTabsWithSpaces(this string s)
             => s.IsNullOrEmpty() ? s : s.Replace("\t", " ").RemoveWideSpaces();
+
+        /// <summary>
+        /// Replace the New Line Chars To White Spaces
+        /// </summary>
+        /// <param name="s"></param>
+        /// <returns></returns>
+        public static string NewLinesToWhiteSpaces(this string s)
+             => s.IsNullOrEmpty() ? s : s.Replace("\n", " ").RemoveWideSpaces();
     }
 }
