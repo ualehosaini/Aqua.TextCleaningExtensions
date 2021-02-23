@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{6918FA65
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "others", "others", "{54121764-D94D-4E57-AF11-CB291B0715F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aqua.TextCleaningExtensions", "Aqua.TextCleaningExtensions\Aqua.TextCleaningExtensions.csproj", "{3BA3AB38-17B6-4C9E-A5DF-3B4DF38B5221}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aqua.TextCleaningExtensions", "Aqua.TextCleaningExtensions\Aqua.TextCleaningExtensions.csproj", "{3BA3AB38-17B6-4C9E-A5DF-3B4DF38B5221}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

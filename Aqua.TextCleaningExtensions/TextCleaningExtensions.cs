@@ -58,5 +58,13 @@ namespace Aqua.TextCleaningExtensions
         /// <returns></returns>
         public static string NewLinesToWhiteSpaces(this string s)
              => s.IsNullOrEmpty() ? s : s.Replace("\n", " ").RemoveWideSpaces();
+
+        /// <summary>
+        /// Clean the text
+        /// </summary>
+        /// <param name="s"></param>
+        /// <returns></returns>
+        public static string ToCleanText(this string s)
+            => s.IsNullOrEmpty() ? s : s.Replace("\n", " ").Replace("\t", " ").RemoveWideSpaces();
     }
 }
