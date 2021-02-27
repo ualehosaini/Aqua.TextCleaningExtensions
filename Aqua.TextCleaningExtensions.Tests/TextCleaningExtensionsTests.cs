@@ -58,6 +58,13 @@ namespace Aqua.TextCleaningExtensions.Tests
         public void NewLinesToWhiteSpaces_InValid(string input, string expected)
             => Assert.NotEqual(expected, input.NewLinesToWhiteSpaces());
 
-
+        [Theory]
+        [InlineData("", "")]
+        [InlineData(" ", "")]
+        [InlineData(null, null)]
+        [InlineData("   lorem\nipsum  dolor\n  ", "lorem ipsum dolor")]
+        [InlineData("\tlorem\nipsum    dolor\n     ", "lorem ipsum dolor")]
+        public void ToCleanText_Valid(string input, string expected)
+            => Assert.Equal(expected, input.ToCleanText());
     }
 }
