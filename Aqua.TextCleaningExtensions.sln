@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "others", "others", "{541217
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aqua.TextCleaningExtensions", "Aqua.TextCleaningExtensions\Aqua.TextCleaningExtensions.csproj", "{3BA3AB38-17B6-4C9E-A5DF-3B4DF38B5221}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aqua.TextCleaningExtensions.Tests", "Aqua.TextCleaningExtensions.Tests\Aqua.TextCleaningExtensions.Tests.csproj", "{6BD9BA4F-109B-438E-A87A-F2FD4CABB452}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,12 +23,17 @@ Global
 		{3BA3AB38-17B6-4C9E-A5DF-3B4DF38B5221}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BA3AB38-17B6-4C9E-A5DF-3B4DF38B5221}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BA3AB38-17B6-4C9E-A5DF-3B4DF38B5221}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BD9BA4F-109B-438E-A87A-F2FD4CABB452}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BD9BA4F-109B-438E-A87A-F2FD4CABB452}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BD9BA4F-109B-438E-A87A-F2FD4CABB452}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BD9BA4F-109B-438E-A87A-F2FD4CABB452}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{3BA3AB38-17B6-4C9E-A5DF-3B4DF38B5221} = {2C73D2E9-D6DA-4278-9B3E-0F1A9B144628}
+		{6BD9BA4F-109B-438E-A87A-F2FD4CABB452} = {6918FA65-0321-488C-9D60-C03CE465FEEE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6654102D-99A5-49E0-AFEF-76CD23C15093}
