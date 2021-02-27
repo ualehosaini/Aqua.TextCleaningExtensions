@@ -1,7 +1,18 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Description>Is an Open Source and Free Software package for .NET to facilitate Cleaning Text</Description>
+    <Authors>Useme Alehosaini</Authors>
+    <Company />
+    <PackageProjectUrl>https://github.com/ualehosaini/Aqua.TextCleaningExtensions</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ualehosaini/Aqua.TextCleaningExtensions</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>text cleaning extensions helpers .net</PackageTags>
+    <InludeSymbols>true</InludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <PackageLicenseFile>C:\REPOS\Aqua.TextCleaningExtensions\License.md</PackageLicenseFile>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
 </Project>
