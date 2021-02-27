@@ -53,6 +53,11 @@ namespace Aqua.TextCleaningExtensions.Tests
         public void NewLinesToWhiteSpacess_Valid(string input, string expected)
             => Assert.Equal(expected, input.NewLinesToWhiteSpaces());
 
+        [Theory]
+        [InlineData("lorem\nipsum dolor\n", "lorem\ripsum dolor\r")]
+        public void NewLinesToWhiteSpaces_InValid(string input, string expected)
+            => Assert.NotEqual(expected, input.NewLinesToWhiteSpaces());
+
 
     }
 }
