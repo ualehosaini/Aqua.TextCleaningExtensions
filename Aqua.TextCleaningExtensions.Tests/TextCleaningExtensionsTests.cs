@@ -19,5 +19,14 @@ namespace Aqua.TextCleaningExtensions.Tests
         [InlineData("lorem ipsum dolor", false)]
         public void InNullOrWhiteSpace_Valid(string input, bool expected)
             => Assert.Equal(expected, input.IsNullOrWhiteSpace());
+
+        [Theory]
+        [InlineData("", "")]
+        [InlineData(" ", "")]
+        [InlineData(null, null)]
+        [InlineData("lorem     ipsum dolor    ", "lorem ipsum dolor")]
+        [InlineData("  lorem     ipsum   dolor", "lorem ipsum dolor")]
+        public void RemoveWideSpaces_Valid(string input, string expected)
+            => Assert.Equal(expected, input.RemoveWideSpaces());
     }
 }
