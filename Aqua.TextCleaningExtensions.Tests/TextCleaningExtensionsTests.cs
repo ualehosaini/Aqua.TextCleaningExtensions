@@ -43,5 +43,16 @@ namespace Aqua.TextCleaningExtensions.Tests
         [InlineData("   lorem      ipsum   dolor", "abcd lorem      ipsum   dolor")]
         public void ReplaceTabsWithSpaces_InValid(string input, string expected)
             => Assert.NotEqual(expected, input.ReplaceTabsWithSpaces());
+
+        [Theory]
+        [InlineData("", "")]
+        [InlineData(" ", "")]
+        [InlineData(null, null)]
+        [InlineData("lorem\nipsum dolor", "lorem ipsum dolor")]
+        [InlineData("lorem\nipsum dolor\n", "lorem ipsum dolor")]
+        public void NewLinesToWhiteSpacess_Valid(string input, string expected)
+            => Assert.Equal(expected, input.NewLinesToWhiteSpaces());
+
+
     }
 }
